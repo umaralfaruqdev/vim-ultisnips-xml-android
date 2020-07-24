@@ -1,0 +1,181 @@
+snippet ad "android"
+android:${1:propsName}="${2:value}"
+endsnippet
+
+snippet al "android layout"
+android:layout_${1:layoutName}="${2:value}"
+endsnippet
+
+#-------Comon markup---------
+snippet bg "background"
+android:background="${1:value}"
+endsnippet
+
+# text
+snippet ts "Text size"
+android:textSize="${1:value}"
+endsnippet
+
+snippet tc "color"
+android:textColor="${1:value}"
+endsnippet
+
+snippet txt "text"
+android:text="${1:value}"
+endsnippet
+
+snippet gv "gravity"
+android:gravity="${1:value}"
+endsnippet
+
+snippet id "id"
+android:id="@+id/${1:value}"
+endsnippet
+
+# layout
+snippet h "height"
+android:layout_height="${1:value}"
+endsnippet
+
+snippet w "width"
+android:layout_height="${1:value}"
+endsnippet
+#-------End---------------
+
+#-----value-----
+snippet mp "match parent"
+match_parent
+endsnippet
+#-----end---
+
+#---component----
+snippet tv "text view"
+<TextView
+	android:layout_width="${1:match_parent}"
+	android:layout_height="${2:match_parent}"
+	/>
+endsnippet
+
+snippet btn "Button"
+<Button
+	android:layout_width="${1:value}"
+	android:layout_height="${2:value}"
+	/>
+endsnippet
+
+snippet et "text edit"
+<EditText
+	android:layout_width="${1:value}"
+	android:layout_height="${2:value}"
+	/>
+endsnippet
+#---end-----
+
+# Constraint secstions
+snippet cs "constraint tag"
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="${1:value}"
+	android:layout_height="${2:value}"
+	tools.context="${3:activity}"
+	/>
+	${4:your code here}
+</android.support.constraint.ConstraintLayout>
+endsnippet
+
+snippet cbtb "constraintBottom_toBottomOf"
+android:layout_constraintBottom_toBottomOf="@id/${1:id}"
+endsnippet
+
+snippet cttt "constraint"
+android:layout_constraintTop_toTopOf="@id/${1:id}"
+endsnippet
+
+snippet crtr "constraint"
+android:layout_constraintRight_toRightOf="@id/${1:id}"
+endsnippet
+
+snippet cltl "constraint"
+android:layout_constraintLeft_toLeftOf="@id/${1:id}"
+endsnippet
+
+snippet ct "constraint"
+android:layout_constraintTop_to${1:position}Of="@id/${2:id}"
+endsnippet
+
+snippet cr "constraint"
+android:layout_constraintRight_to${1:position}Of="@id/${2:id}"
+endsnippet
+
+snippet cb "constraint"
+android:layout_constraintBottom_to${1:position}Of="@id/${2:id}"
+endsnippet
+
+snippet cl "constraint"
+android:layout_constraintLeft_to${1:position}Of="@id/${2:id}"
+endsnippet
+
+# end
+
+
+# linear
+snippet ll "LinearLayout tag"
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="${1:value}"
+	android:layout_height="${2:value}"
+	tools.context="${3:activity}"
+	/>
+	${4:your code here}
+</LinearLayout>
+endsnippet
+
+# end
+
+# Relative
+snippet rl "RelativeLayout tag"
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="${1:value}"
+	android:layout_height="${2:value}"
+	tools.context="${3:activity}"
+	/>
+	${4:your code here}
+</RelativeLayout>
+endsnippet
+
+snippet ch "center horizontal"
+android:layout_centerHorizontal="${1:bool}"
+endsnippet
+
+snippet cv "center Vertical"
+android:layout_centerVertical="${1:bool}"
+endsnippet
+
+snippet sip "center in parent"
+android:layout_centerInParent="${1:bool}"
+endsnippet
+
+snippet ab "above"
+android:layout_above="@id/${1:value}"
+endsnippet
+
+snippet be "below"
+android:layout_below="@id/${1:value}"
+endsnippet
+
+snippet tl "toLeftOf"
+android:layout_toLeftOf="@id/${1:value}"
+endsnippet
+
+snippet tr "toRightOf"
+android:layout_toRightOf="@id/${1:value}"
+endsnippet
+
+
