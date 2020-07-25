@@ -87,9 +87,9 @@ snippet cs "constraint tag"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="${1:value}"
-	android:layout_height="${2:value}"
-	tools:context="${3:activity}"
+	android:layout_width="${1:match_parent}"
+	android:layout_height="${2:match_parent}"
+	tools:context="${3:.MainActivity}"
 	>
 	${4:your code here}
 </android.support.constraint.ConstraintLayout>
@@ -124,7 +124,7 @@ android:layout_constraintBottom_to${1:position}Of="@id/${2:id}"
 endsnippet
 
 snippet cl "constraint"
-android:layout_constraintLeft_to${1:position}Of="@id/${2:id}"
+android:layout_constraint.MainActivity{1:position}Of="@id/${2:id}"
 endsnippet
 
 # end
@@ -136,9 +136,9 @@ snippet ll "LinearLayout tag"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="${1:value}"
-	android:layout_height="${2:value}"
-	tools:context="${3:activity}"
+	android:layout_width="${1:match_parent}"
+	android:layout_height="${2:match_parent}"
+	tools:context="${3:.MainActivity}"
 	>
 	${4:your code here}
 </LinearLayout>
@@ -152,40 +152,40 @@ snippet rl "RelativeLayout tag"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
-	android:layout_width="${1:value}"
-	android:layout_height="${2:value}"
-	tools:context="${3:activity}"
+	android:layout_width="${1:match_parent}"
+	android:layout_height="${2:match_parent}"
+	tools:context="${3:.MainActivity}"
 	>
 	${4:your code here}
 </RelativeLayout>
 endsnippet
 
 snippet ch "center horizontal"
-android:layout_centerHorizontal="${1:bool}"
+android:layout_centerHorizontal="${1:true}"
 endsnippet
 
 snippet cv "center Vertical"
-android:layout_centerVertical="${1:bool}"
+android:layout_centerVertical="${1:true}"
 endsnippet
 
 snippet sip "center in parent"
-android:layout_centerInParent="${1:bool}"
+android:layout_centerInParent="${1:true}"
 endsnippet
 
 snippet ab "above"
-android:layout_above="@id/${1:value}"
+android:layout_above="@id/${1:id}"
 endsnippet
 
 snippet be "below"
-android:layout_below="@id/${1:value}"
+android:layout_below="@id/${1:id}"
 endsnippet
 
 snippet tl "toLeftOf"
-android:layout_toLeftOf="@id/${1:value}"
+android:layout_toLeftOf="@id/${1:id}"
 endsnippet
 
 snippet tr "toRightOf"
-android:layout_toRightOf="@id/${1:value}"
+android:layout_toRightOf="@id/${1:di}"
 endsnippet
 
 
