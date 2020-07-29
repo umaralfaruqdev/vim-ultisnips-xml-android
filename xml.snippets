@@ -13,32 +13,32 @@ endsnippet
 
 # text
 snippet ts "Text size"
-android:textSize="${1:value}"
+android:textSize="${1:14sp}"
 endsnippet
 
 snippet tc "color"
-android:textColor="${1:value}"
+android:textColor="#${1:fff}"
 endsnippet
 
 snippet txt "text"
-android:text="${1:value}"
+android:text="${1:lorem}"
 endsnippet
 
 snippet gv "gravity"
-android:gravity="${1:value}"
+android:gravity="${1:center}"
 endsnippet
 
 snippet id "id"
-android:id="@+id/${1:value}"
+android:id="@+id/${1:id}"
 endsnippet
 
 # layout
 snippet h "height"
-android:layout_height="${1:value}"
+android:layout_height="${1:wrap_content}"
 endsnippet
 
 snippet w "width"
-android:layout_height="${1:value}"
+android:layout_height="${1:wrap_content}"
 endsnippet
 #-------End---------------
 
@@ -53,7 +53,7 @@ snippet tv "text view"
 <TextView
 	android:layout_width="${1:wrap_content}"
 	android:layout_height="${2:wrap_content}"
-	android:text="${3:text}"
+	android:text="${3:Lorem}"
 	android:textSize="${4:size}"
 	/>
 endsnippet
@@ -62,8 +62,8 @@ snippet btn "Button"
 <Button
 	android:layout_width="${1:wrap_content}"
 	android:layout_height="${2:wrap_content}"
-	android:text="${3:text}"
-	android:textSize="${4:size}"
+	android:text="${3:Button}"
+	android:textSize="#${4:14sp}"
 	/>
 endsnippet
 
