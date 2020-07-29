@@ -83,7 +83,7 @@ endsnippet
 
 # Constraint secstions
 snippet cs "constraint tag"
-<android.support.constraint.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
@@ -92,7 +92,7 @@ snippet cs "constraint tag"
 	tools:context="${3:.MainActivity}"
 	>
 	${4:your code here}
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
 endsnippet
 
 snippet cbtb "constraintBottom_toBottomOf"
@@ -112,19 +112,19 @@ android:layout_constraintLeft_toLeftOf="@id/${1:id}"
 endsnippet
 
 snippet ct "constraint"
-android:layout_constraintTop_to${1:position}Of="@id/${2:id}"
+android:layout_constraintTop_to${1:Top}Of="@id/${2:id}"
 endsnippet
 
 snippet cr "constraint"
-android:layout_constraintRight_to${1:position}Of="@id/${2:id}"
+android:layout_constraintRight_to${1:Right}Of="@id/${2:id}"
 endsnippet
 
 snippet cb "constraint"
-android:layout_constraintBottom_to${1:position}Of="@id/${2:id}"
+android:layout_constraintBottom_to${1:Bottom}Of="@id/${2:id}"
 endsnippet
 
 snippet cl "constraint"
-android:layout_constraint.MainActivity{1:position}Of="@id/${2:id}"
+android:layout_constraintLeft.toLeftOf="@id/${2:id}"
 endsnippet
 
 # end
